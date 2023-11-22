@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  background-color: #f4f5f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.25rem 5% 0.75rem;
+}
+
+.dropinput {
+  background-color: #f5f5f5;
+  width: 80px;
+  height: 10px;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem 1rem;
+  border: 0.25px solid rgb(109, 107, 107);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boxinputgroup {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  left: 170px;
+  top: 2px;
+  width: 45px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boxinputorder {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  left: 170px;
+  width: 45px;
+  bottom: 4px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boxinputorder > .MuiSvgIcon-root,
+.boxinputgroup > .MuiSvgIcon-root {
+  position: absolute;
+  right: -40px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+
+.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.dropdown {
+  position: absolute;
+  left: 5%;
+  top: 55px;
+  width: 300px;
+  height: 90px;
+  border-radius: 0.5rem;
+  border: 0.25px solid black;
+  background-color: #e9ecf1;
+}
+
+.groupdrop {
+  position: absolute;
+  left: 295px;
+  top: 8px;
+  width: 90px;
+  height: 75px;
+  border-radius: 0.5rem;
+  border: 0.25px solid black;
+  background-color: #f9fafd;
+}
+
+.orderdrop {
+  position: absolute;
+  left: 295px;
+  top: 50px;
+  width: 90px;
+  height: 50px;
+  border-radius: 0.5rem;
+  border: 0.25px solid black;
+  background-color: #f9fafd;
+}
+
+.dropdownItem {
+  list-style: none;
+  text-decoration: none;
+  margin: 8px -2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputbox {
+  background-color: #ffffff;
+  width: 100px;
+  height: 30px;
+  border-radius: 0.25rem;
+  padding: 0rem 0.5rem;
+  border: 0.25px solid black;
+}
+
+.group {
+  list-style: none;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order {
+  list-style: none;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 3px 5px;
+}
+
+.listitem:hover {
+  color: rgb(148, 148, 148);
+  cursor: pointer;
+}
+
+.homeBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.userBox {
+  display: inline-block;
+  margin: 0 0 0 25px;
+  border-radius: 5px;
+  width: 18%;
+  height: 100%;
+  text-align: center;
+}
+
+.boxHeader {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 0;
+}
+
+.boxHeader > .MuiSvgIcon-root {
+  width: 10%;
+  color: #959698;
+  cursor: pointer;
+}
+
+.headerName {
+  width: 70%;
+  text-align: left;
+  margin: 3px;
+}
+
+.headerName > span {
+  color: #959698;
+  margin-left: 5px;
+}
+
+.boxContent {
+  border: 0.15px solid rgb(188, 188, 188);
+  height: 85px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.boxFirst {
+  display: flex;
+  padding: 8px 8px 5px;
+  justify-content: space-between;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.boxCam {
+  color: #959698;
+}
+
+.boxTitle {
+  text-align: left;
+  padding: 0px 8px;
+  margin: 0 0 2px;
+  font-weight: 500;
+  width: 90%;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.icon {
+  display: flex;
+}
+
+.iconBox1 {
+  border-radius: 5px;
+  margin: 5px 8px;
+  padding: 1px 1px 2px;
+  width: 15px;
+  height: 15px;
+  border: 0.25px solid rgb(188, 188, 188);
+}
+
+.iconBox2 {
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 1px 1px 2px;
+  width: 110px;
+  height: 15px;
+  border: 0.25px solid rgb(188, 188, 188);
+  display: flex;
+}
+
+.featureContent {
+  font-size: 11px;
+  color: #959698;
+  padding: 1px;
+}
+
+.iconBox1 > .MuiSvgIcon-root,
+.iconBox2 > .MuiSvgIcon-root {
+  font-size: smaller;
+  margin: auto;
+  color: #959698;
+}
